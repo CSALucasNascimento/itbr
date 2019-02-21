@@ -1,0 +1,35 @@
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+
+.container-1600 {
+    max-width: 1600px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-grid {
+    display: grid;
+}
