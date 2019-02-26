@@ -1,0 +1,13 @@
+footer {
+    #wrapper {
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        p {
+            max-width: 400px;
+            align-self: end;
+        }
+
+    }
+}

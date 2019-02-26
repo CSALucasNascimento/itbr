@@ -17,7 +17,8 @@
   --font-secondary: 'Josefin Sans', sans-serif;
   /*! = sizes
   -------------------------------------------------------------- */
-  --font-size-small:	    12px;
+  --font-size-x-small:	  12px;
+  --font-size-small:	    14px;
   --font-size-regular:	  16px;
   --font-size-large:	    24px;
   --font-size-x-large:	  32px;
@@ -56,6 +57,9 @@
 
 .bg-secondary {
   background-color: var(--color-secondary) !important; }
+
+.bg-dark {
+  background-color: var(--color-black) !important; }
 
 .container-1600 {
   max-width: 1600px;
@@ -517,6 +521,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-secondary);
+  font-weight: var(--font-black);
   line-height: normal; }
 
 h1 {
@@ -531,6 +536,12 @@ h3 {
 
 h4 {
   font-size: var(--font-size-regular); }
+
+.font-size-small {
+  font-size: var(--font-size-small); }
+
+.font-size-x-small {
+  font-size: var(--font-size-x-small); }
 
 /*! = Layout
 -------------------------------------------------------------- */
@@ -565,8 +576,45 @@ section {
   background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
   background-size: cover, cover; }
 
+footer #wrapper {
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; }
+  footer #wrapper p {
+    max-width: 400px;
+    align-self: end; }
+
 /*! = Components
 -------------------------------------------------------------- */
+.testmonial-item {
+  justify-items: center;
+  grid-row-gap: var(--gap);
+  max-width: 400px; }
+  .testmonial-item.testmonial-one {
+    grid-area: test-one;
+    margin-top: calc(-5 * var(--gap)); }
+  .testmonial-item.testmonial-two {
+    grid-area: test-two; }
+  .testmonial-item.testmonial-three {
+    grid-area: test-three; }
+  .testmonial-item .testmonial {
+    position: relative; }
+    .testmonial-item .testmonial::before {
+      content: url("../../images/left-quote-icon.png");
+      background-size: 10px;
+      position: absolute;
+      left: -5%;
+      top: -5%; }
+    .testmonial-item .testmonial::after {
+      content: url("../../images/right-quote-icon.png");
+      position: absolute;
+      right: -5%;
+      top: -5%; }
+  .testmonial-item .client-details {
+    justify-items: center; }
+    .testmonial-item .client-details h4 {
+      margin-bottom: 0; }
+
 /*! = Pages
 -------------------------------------------------------------- */
 #home {
@@ -605,6 +653,24 @@ section {
           margin-left: calc(1.75 * var(--gap)); }
         #home #section-one .nossa-missao p:nth-of-type(3) {
           margin-left: calc(3.5 * var(--gap)); }
+  #home #section-two #wrapper {
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 'test-title test-one .' 'test-two test-one test-three' 'test-two test-one test-three'; }
+    #home #section-two #wrapper h2 {
+      grid-area: test-title;
+      align-self: end; }
+  #home #section-three {
+    background: url("../../images/grupo.png");
+    background-position: bottom center; }
+    #home #section-three #wrapper {
+      align-items: center;
+      grid-template-rows: 2fr 1fr 2fr;
+      justify-items: center; }
+      #home #section-three #wrapper p {
+        max-width: 400px;
+        align-self: end; }
 
 /*! = Theme
 -------------------------------------------------------------- */

@@ -62,4 +62,43 @@
 
     }
 
+    #section-two {
+
+        #wrapper {
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+            'test-title test-one .'
+            'test-two test-one test-three'
+            'test-two test-one test-three';
+
+            h2 {
+                grid-area: test-title;
+                align-self: end;
+            }
+
+        }
+
+    }
+
+    #section-three {
+
+        background: url('../../images/grupo.png');
+        background-position: bottom center;
+
+        #wrapper {
+            align-items: center;
+            grid-template-rows: 2fr 1fr 2fr;
+            justify-items: center;
+
+            p {
+                max-width: 400px;
+                align-self: end;
+            }
+
+        }
+
+    }
+
 }
