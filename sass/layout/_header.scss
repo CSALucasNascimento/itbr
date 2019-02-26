@@ -4,4 +4,6 @@ header {
     
     height: calc(var(--header-height) - calc(var(--gap) * 2));
     padding: var(--gap);
+    position: relative;
+    z-index: 2;
 }
