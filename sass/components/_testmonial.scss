@@ -20,14 +20,14 @@
         position: relative;
 
         &::before {
-            content: url('../../images/left-quote-icon.png');
+            content: url('../images/left-quote-icon.png');
             background-size: 10px;
             position: absolute;
             left: -5%;
             top: -5%;
         }
         &::after {
-            content: url('../../images/right-quote-icon.png');
+            content: url('../images/right-quote-icon.png');
             position: absolute;
             right: -5%;
             top: -5%;
