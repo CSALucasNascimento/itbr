@@ -1,5 +1,7 @@
 footer {
 
+    background: linear-gradient(to left bottom, var(--color-black) 85%, var(--color-dark-grey) 15%);
+
     padding-top: calc(var(--gap) * 7);
 
     #wrapper {

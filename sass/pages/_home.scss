@@ -2,10 +2,10 @@
     margin-top: calc(-1 * calc(var(--header-height) - calc(var(--gap) * 2)));
 
     #section-main {
-        background: url('../../images/right-side-hero-banner.png');
-        
+        background: url('../images/right-side-hero-banner.png');
+
         &:before {
-            content: url('../../images/left-side-hero-banner.png');
+            content: url('../images/left-side-hero-banner.png');
             position: absolute;
             object-fit: cover;
             left: 0;

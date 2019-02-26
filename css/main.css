@@ -35,6 +35,7 @@
   --color-dark-blue:    rgba(99, 199, 233, 1);
   --color-white:        rgba(255,255,255,1);
   --color-black:        rgba(0,0,0,1);
+  --color-dark-grey:    rgba(29,29,29,1);
   /*! = break points
   -------------------------------------------------------------- */
   --app-width: minmax(auto, 6rem);
@@ -577,6 +578,7 @@ section, footer {
   min-height: var(--section-height); }
 
 footer {
+  background: linear-gradient(to left bottom, var(--color-black) 85%, var(--color-dark-grey) 15%);
   padding-top: calc(var(--gap) * 7); }
   footer #wrapper {
     align-items: start;
@@ -641,10 +643,10 @@ footer {
 #home {
   margin-top: calc(-1 * calc(var(--header-height) - calc(var(--gap) * 2))); }
   #home #section-main {
-    background: url("../../images/right-side-hero-banner.png");
+    background: url("../images/right-side-hero-banner.png");
     align-items: center; }
     #home #section-main:before {
-      content: url("../../images/left-side-hero-banner.png");
+      content: url("../images/left-side-hero-banner.png");
       position: absolute;
       object-fit: cover;
       left: 0;
